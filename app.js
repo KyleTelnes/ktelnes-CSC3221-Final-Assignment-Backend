@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 
 // for database
-var db = require('./database');
+var db = require('./db');
 
 var booksRouter = require('./routes/books');
 
