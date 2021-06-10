@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 // Where does this come from?
-const mongoDB = process.env.MONGODB_URI || 'mongodb+srv://dbUser:2zIps7cXmTzOMUlP@assignment-backend0.dux1h.mongodb.net/books?retryWrites=true&w=majority';
+const mongoDB = process.env.MONGODB_URI || 'mongodb+srv://dbUser:2zIps7cXmTzOMUlP@final-assignment-db.dux1h.mongodb.net/books?retryWrites=true&w=majority';
 
 // What is this syntax about?
 mongoose
-    .connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true})
+    .connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true}) //2zIps7cXmTzOMUlP
     .then(() => {
         console.log('DB Connected!');
     })
